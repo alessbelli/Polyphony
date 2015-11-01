@@ -14,7 +14,7 @@
     <string name="activity_server">Server Mode</string>
 
     <!--Client Activity -->
-    <string name="textview_client">Choose a room to join</string>
+    <string name="textview_client">Choose a room to join!</string>
     <string name="activity_client">Client Mode</string>
 
     <!-- Help Activity -->
