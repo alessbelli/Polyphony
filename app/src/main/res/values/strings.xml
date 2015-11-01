@@ -1,0 +1,31 @@
+<resources>
+
+    <string name="app_name">Polyphony</string>
+
+    <!-- Main Activity -->
+    <string name="button_client">I\'m a Client</string>
+    <string name="button_server">I\'m a Server</string>
+    <string name="greetings">Welcome to Polyphony! Please choose whether you\'d like to be the server or the client</string>
+    <string name="intstructions_Server">You have music you want to play across other devices: </string>
+    <string name="intstructions_Client">You want to use your phone as a speaker:</string>
+
+    <!-- Server Activity -->
+    <string name="textview_server">Creating a Room, waiting for clients</string>
+    <string name="activity_server">Server Mode</string>
+
+    <!--Client Activity -->
+    <string name="textview_client">Choose a room to join</string>
+    <string name="activity_client">Client Mode</string>
+
+    <!-- Help Activity -->
+    <string name= "activity_help">Help</string>
+    <string name="textview_help">This app allows you to listen to music on your phone and on other nearby devices simultaneously, using Wifi Direct technology. You have to ensure your Wifi is on.</string>
+    <string name="copyright">App by Imola Gagy, Vivien Morlet, Alessandro Jeanteur</string>
+    <string name="subject">Made for CentraleSupelec software development project, Oct 2015</string>
+
+    <!-- AppBar Menu items -->
+    <string name="action_settings">Go to Wifi Settings</string>
+    <string name="action_help">Help</string>
+
+
+</resources>

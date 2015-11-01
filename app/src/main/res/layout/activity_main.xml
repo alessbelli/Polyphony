@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary" app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+<!--
+    //1.display arrows
+    //1.1 left
+    <ImageView
+        android:layout_weight="0"
+        android:id="@+id/test_image_left"
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="50dp"
+        android:maxHeight="50dp"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="3dp"
+        android:src="@drawable/left1"
+        />
+
+    //1.2 right
+    <ImageView
+        android:layout_weight="0"
+        android:id="@+id/test_image_right"
+        android:layout_gravity="right"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="50dp"
+        android:maxHeight="50dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/right1"
+        /> -->
+
+    //2. background image
+    <LinearLayout android:id="@+id/LinearLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <!--android:background="@drawable/background_blue">-->
+
+        //to keep image ratio, crop the edges
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/background_blue"
+            android:scaleType="centerCrop"
+            android:alpha="0.7"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/content_main" />
+
+</android.support.design.widget.CoordinatorLayout>

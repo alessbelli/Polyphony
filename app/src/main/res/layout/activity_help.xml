@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:text="@string/textview_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        android:id="@+id/help_textview1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/centralesupelec"
+        android:id="@+id/imageView" />
+    <TextView
+        android:text="@string/subject"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:id="@+id/help_textview2"
+        android:layout_above="@+id/imageView"
+        android:layout_alignLeft="@+id/help_textview3"
+        android:layout_alignStart="@+id/help_textview3" />
+
+    <TextView
+        android:text="@string/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/help_textview3"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"/>
+    
+</RelativeLayout>
