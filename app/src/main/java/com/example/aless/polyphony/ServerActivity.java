@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 
 /**
@@ -49,16 +50,34 @@ public class ServerActivity extends AppCompatActivity {
 
     }
 
+
     @Override
     protected void onResume() {
         super.onResume();
-        //registerReciever(mReciever, mIntentFilter);
+        registerReceiver(mReciever, mIntentFilter);
     }
+
+
 
     @Override
     protected void onPause() {
         super.onPause();
         unregisterReceiver(mReciever);
+    }
+
+    private void searchPeers(){
+        mManager.discoverPeers(mChannel, new WifiP2pManager.ActionListener() {
+            @Override
+            public void onSuccess() {
+                Toast.makeText(getApplicationContext(), "Success!", Toast.LENGTH_LONG).show();
+            }
+
+            @Override
+            public void onFailure(int reasonCode) {
+                Toast.makeText(getApplicationContext(), "discovery failed, try again. Error "+reasonCode,Toast.LENGTH_LONG).show();
+            }
+        });
+
     }
 
     @Override
